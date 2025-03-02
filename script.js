@@ -8,5 +8,5 @@ const output = document.getElementById("output");
 let isError = false;
 
 function cleanInputString(str) {
-  const regex = /\+-\s/; // Matches +-. the regex is used to remove the +-. from the string and any whitespace
+  const regex = /[+-\s]/; // This now matches +- and whitespace individually.
 }
