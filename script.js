@@ -13,5 +13,6 @@ function cleanInputString(str) {
 }
 
 function isValidInput(str) {
-  const regex = /\d+e\d+/i; // the \d is a shorthand for [0-9]
+  const regex = /\d+e\d+/i;
+  return str.match(regex); // the match method will return null if the pattern is not found in the string
 }
