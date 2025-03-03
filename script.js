@@ -22,8 +22,7 @@ console.log(isInvalidInput("1000")); // false because it's valid there is no e i
 console.log(entryDropdown.value); // breakfast
 
 function addEntry() {
-  const targetId = "#" + entryDropdown.value; // #breakfast
   const targetInputContainer = document.querySelector(
-    `${targetId} .input-container`
+    `#${entryDropdown.value} .input-container`
   ); // <div class="input-container"></div>
 }
