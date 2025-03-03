@@ -18,3 +18,5 @@ function isInvalidInput(str) {
 }
 console.log(isInvalidInput("1e3")); // true because it's invalid
 console.log(isInvalidInput("1000")); // false because it's valid there is no e in the string. returns null in console
+
+console.log(entryDropdown.value); // breakfast
