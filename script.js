@@ -13,5 +13,5 @@ function cleanInputString(str) {
 }
 
 function isValidInput(str) {
-  const regex = /[0-9]e[0-9]/i; // The i flag stands for case-insensitive and [0-9]e[0-9] is a pattern that matches any number followed by the letter e and another number
+  const regex = /[0-9]+e[0-9]+/i; // the + modifier means one or more occurrences of the preceding character
 }
