@@ -20,3 +20,10 @@ console.log(isInvalidInput("1e3")); // true because it's invalid
 console.log(isInvalidInput("1000")); // false because it's valid there is no e in the string. returns null in console
 
 console.log(entryDropdown.value); // breakfast
+
+function addEntry() {
+  const targetId = "#" + entryDropdown.value; // #breakfast
+  const targetInputContainer = document.querySelector(
+    targetId + " .input-container"
+  ); // <div class="input-container"></div>
+}
