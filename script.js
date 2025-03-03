@@ -13,5 +13,5 @@ function cleanInputString(str) {
 }
 
 function isValidInput(str) {
-  const regex = /[0-9]+e[0-9]+/i; // the + modifier means one or more occurrences of the preceding character
+  const regex = /\d+e\d+/i; // the \d is a shorthand for [0-9]
 }
