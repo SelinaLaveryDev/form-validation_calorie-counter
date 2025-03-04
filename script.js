@@ -41,3 +41,5 @@ function addEntry() {
   `; // breakfast-0-name
   targetInputContainer.innerHTML += HTMLString;
 }
+
+addEntryButton.addEventListener("click", addEntry);
