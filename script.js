@@ -24,5 +24,6 @@ console.log(entryDropdown.value); // breakfast
 function addEntry() {
   const targetInputContainer = document.querySelector(
     `#${entryDropdown.value} .input-container`
-  ); // <div class="input-container"></div>
+    const entryNumber = targetInputContainer.querySelectorAll();
+  ); 
 }
