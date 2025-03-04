@@ -29,6 +29,6 @@ function addEntry() {
     'input[(type = "text")]'
   ).length; // breakfast input[type="text"]
   const HTMLString = `
-  <label>Entry ${entryNumber} Name</label>
-  `;
+  <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+  `; // breakfast-0-name
 }
