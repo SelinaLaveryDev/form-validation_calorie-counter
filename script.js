@@ -28,5 +28,7 @@ function addEntry() {
   const entryNumber = targetInputContainer.querySelectorAll(
     'input[(type = "text")]'
   ).length; // breakfast input[type="text"]
-  const HTMLString = ``;
+  const HTMLString = `
+  <label>Entry ${entryNumber} Name</label>
+  `;
 }
