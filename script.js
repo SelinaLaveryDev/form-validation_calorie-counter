@@ -16,18 +16,13 @@ function isInvalidInput(str) {
   const regex = /\d+e\d+/i;
   return str.match(regex); // the match method will return null if the pattern is not found in the string
 }
-console.log(isInvalidInput("1e3")); // true because it's invalid
-console.log(isInvalidInput("1000")); // false because it's valid there is no e in the string. returns null in console
-
-console.log(entryDropdown.value); // breakfast
 
 function addEntry() {
   const targetInputContainer = document.querySelector(
-    `#${entryDropdown.value} .input-container` // breakfast .input-container
+    `#${entryDropdown.value} .input-container`
   );
-  const entryNumber = targetInputContainer.querySelectorAll(
-    'input[(type = "text")]'
-  ).length; // breakfast input[type="text"]
+  const entryNumber =
+    targetInputContainer.querySelectorAll('input[type="text"]').length;
   const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name" />
@@ -38,7 +33,7 @@ function addEntry() {
     id="${entryDropdown.value}-${entryNumber}-calories"
     placeholder="Calories"
   />
-  `; // breakfast-0-name
+  `;
   targetInputContainer.innerHTML += HTMLString;
 }
 
