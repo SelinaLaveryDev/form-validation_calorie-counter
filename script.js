@@ -26,6 +26,7 @@ function addEntry() {
     `#${entryDropdown.value} .input-container` // breakfast .input-container
   );
   const entryNumber = targetInputContainer.querySelectorAll(
-    input[(type = "text")]
+    'input[(type = "text")]'
   ).length; // breakfast input[type="text"]
+  const HTMLString = ``;
 }
