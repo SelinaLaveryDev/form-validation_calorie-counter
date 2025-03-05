@@ -37,4 +37,11 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString); // Insert the HTML string before the end of the target input container
 }
 
+function getCaloriesFromInputs(list) {
+  let calories = 0;
+  for (const item of list) {
+    const currValue = item.value;
+  }
+}
+
 addEntryButton.addEventListener("click", addEntry);
