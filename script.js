@@ -40,7 +40,7 @@ function addEntry() {
 function getCaloriesFromInputs(list) {
   let calories = 0;
   for (const item of list) {
-    const currValue = item.value;
+    const currVal = cleanInputString(item.value);
   }
 }
 
