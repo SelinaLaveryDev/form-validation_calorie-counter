@@ -34,7 +34,7 @@ function addEntry() {
     placeholder="Calories"
   />
   `;
-  targetInputContainer.insertAdjacentHTML();
+  targetInputContainer.insertAdjacentHTML("beforeend", HTMLString); // Insert the HTML string before the end of the target input container
 }
 
 addEntryButton.addEventListener("click", addEntry);
