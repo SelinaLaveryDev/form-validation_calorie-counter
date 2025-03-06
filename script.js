@@ -98,4 +98,6 @@ function calculateCalories(e) {
   output.classList.remove("hide");
 }
 
+calorieCounter.addEventListener("submit", calculateCalories); // We listen for the submit event on the form element
+
 addEntryButton.addEventListener("click", addEntry);
