@@ -5,6 +5,8 @@ const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 
+console.log(budgetNumberInput);
+
 let isError = false;
 
 function cleanInputString(str) {
