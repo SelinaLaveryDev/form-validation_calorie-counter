@@ -82,6 +82,10 @@ function calculateCalories(e) {
   if (isError) {
     return;
   } // If there is an error, we stop the function execution
+  let consumedCalories =
+    breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+  let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+  const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 }
 
 addEntryButton.addEventListener("click", addEntry);
