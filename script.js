@@ -105,6 +105,7 @@ function clearForm() {
   }
   budgetNumberInput.value = "";
   output.innerText = ""; // Clear the output element including all its children using innerText instead of innerHTML because we don't want to insert any HTML and only innerText will suffice because we are only dealing with text not the HTML elements like <span> or <p>
+  output.classList.add("hide");
 }
 
 calorieCounter.addEventListener("submit", calculateCalories); // We listen for the submit event on the form element
