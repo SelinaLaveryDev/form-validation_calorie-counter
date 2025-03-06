@@ -4,9 +4,6 @@ const entryDropdown = document.getElementById("entry-dropdown");
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
-const inputContainers = document.querySelectorAll(".input-container");
-
-console.log("inputContainers >>", inputContainers);
 
 let isError = false;
 
@@ -100,7 +97,9 @@ function calculateCalories(e) {
 }
 
 function clearForm() {
-  const inputContainers = document.querySelectorAll(".input-container");
+  const inputContainers = Array.from(
+    document.querySelectorAll(".input-container")
+  ); // wrapping my inputContainers query selector in Array.from to convert the NodeList to an array
 }
 
 calorieCounter.addEventListener("submit", calculateCalories); // We listen for the submit event on the form element
