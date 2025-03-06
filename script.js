@@ -4,8 +4,9 @@ const entryDropdown = document.getElementById("entry-dropdown");
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
+const inputContainers = document.querySelectorAll(".input-container");
 
-console.log("budgetnoinput >>", budgetNumberInput);
+console.log("inputContainers >>", inputContainers);
 
 let isError = false;
 
