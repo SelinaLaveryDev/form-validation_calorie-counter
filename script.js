@@ -103,6 +103,7 @@ function clearForm() {
   for (const container of inputContainers) {
     container.innerHTML = ""; // Clear the innerHTML of each input container
   }
+  budgetNumberInput.value = "";
 }
 
 calorieCounter.addEventListener("submit", calculateCalories); // We listen for the submit event on the form element
