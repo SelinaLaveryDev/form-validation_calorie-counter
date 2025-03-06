@@ -5,7 +5,7 @@ const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 
-console.log(budgetNumberInput);
+console.log("budgetnoinput >>", budgetNumberInput);
 
 let isError = false;
 
@@ -77,6 +77,11 @@ function calculateCalories(e) {
   const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
   const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
   const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+  const budgetCalories = getCaloriesFromInputs([budgetNumberInput]); // We pass the budget input as an array because the getCaloriesFromInputs function expects an array of inputs
+  console.log("budgetnoinput array >>", [budgetNumberInput]);
+  if (isError) {
+    return;
+  } // If there is an error, we stop the function execution
 }
 
 addEntryButton.addEventListener("click", addEntry);
