@@ -100,6 +100,9 @@ function clearForm() {
   const inputContainers = Array.from(
     document.querySelectorAll(".input-container")
   ); // wrapping my inputContainers query selector in Array.from to convert the NodeList to an array
+  for (const container of inputContainers) {
+    container.innerHTML = ""; // Clear the innerHTML of each input container
+  }
 }
 
 calorieCounter.addEventListener("submit", calculateCalories); // We listen for the submit event on the form element
